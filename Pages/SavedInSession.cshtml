@@ -1,7 +1,7 @@
 ﻿@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Recently Searched";
+    ViewData["Title"] = "Saved in the session";
 }
 <h1>@ViewData["Title"]</h1>
 
@@ -10,7 +10,7 @@
     {
         <p>Data saved in session:</p>
 
-        foreach (FizzBuzz.Scripts.FizzbuzzApp fizz in Model.NumberList)
+        foreach (FizzBuzz.Models.Fizzbuzz fizz in Model.NumberList)
         {
             <p> @Html.DisplayNameFor(model => fizz.Number): @fizz.Number @Html.DisplayNameFor(model => fizz.Result): @fizz.Result @Html.DisplayNameFor(model => fizz.Date): @fizz.Date </p>
         }
