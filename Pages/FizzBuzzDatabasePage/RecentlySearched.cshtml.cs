@@ -25,7 +25,7 @@ namespace FizzBuzz.Pages
         {
             FizzBuzz = _context.Fizzbuzz
                 .OrderByDescending(p => p.Date)
-                .Take(10)
+                .Take(20)
                 .ToList();
         }
     }

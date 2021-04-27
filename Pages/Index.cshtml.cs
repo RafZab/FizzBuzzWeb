@@ -29,7 +29,7 @@ namespace FizzBuzz.Pages
             _logger = logger;
             _context = context;
         }
-
+        
         public void OnGet()
         {
 
