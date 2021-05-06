@@ -8848,11 +8848,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzBetter\\FizzBuzzBetter\\FizzBuzzBetter.csproj",
+      "projectUniqueName": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzWeb\\FizzBuzzBetter\\FizzBuzzBetter.csproj",
       "projectName": "FizzBuzzBetter",
-      "projectPath": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzBetter\\FizzBuzzBetter\\FizzBuzzBetter.csproj",
+      "projectPath": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzWeb\\FizzBuzzBetter\\FizzBuzzBetter.csproj",
       "packagesPath": "C:\\Users\\raffi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzBetter\\FizzBuzzBetter\\obj\\",
+      "outputPath": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzWeb\\FizzBuzzBetter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

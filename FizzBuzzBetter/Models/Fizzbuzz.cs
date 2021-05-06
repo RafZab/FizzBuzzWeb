@@ -16,6 +16,7 @@ namespace FizzBuzz.Models
         [MaxLength(50)]
         [Column(TypeName = "varchar(50)")]
         public string Result { get; set; }
+        public string CreatedBy { get; set; }
 
         public void CheckDisivibility()
         {

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FizzBuzz.Models;
 using FizzBuzzBetter.Data;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -15,10 +16,12 @@ namespace FizzBuzzBetter.Pages.FizzBuzzDatabasePage
     public class DeleteModel : PageModel
     {
         private readonly ApplicationDbContext _context;
-
-        public DeleteModel(ApplicationDbContext context)
+        private readonly UserManager<IdentityUser> _userManager;
+        public DeleteModel(ApplicationDbContext context,
+            UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         [BindProperty]
@@ -33,9 +36,9 @@ namespace FizzBuzzBetter.Pages.FizzBuzzDatabasePage
 
             Fizzbuzz = await _context.Fizzbuzz.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (Fizzbuzz == null)
+            if (Fizzbuzz == null || Fizzbuzz.CreatedBy == null || !Fizzbuzz.CreatedBy.Equals(_userManager.GetUserName(User)))
             {
-                return NotFound();
+                return RedirectToPage("./RecentlySearched");
             }
             return Page();
         }

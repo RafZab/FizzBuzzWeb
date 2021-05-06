@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7rPriHJYj684TIZ/2G9YIA0/LDwwGfHWcwDtItSLiIBGkUE4MqOzPunQHe6HoFn/uFRwBNXQkkpx+t2ZQyZq3g==",
+  "dgSpecHash": "rbmSXmDC5kZChDEK7+S4Ot/7+YMJQqau2B3l1hFW1h2sEoZJ3Mb10jZ1VFPBT+iGUobfZuvQausip9/TTZB9gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzBetter\\FizzBuzzBetter\\FizzBuzzBetter.csproj",
+  "projectFilePath": "C:\\Users\\raffi\\Projekty\\PS .NET\\FizzBuzzWeb\\FizzBuzzBetter\\FizzBuzzBetter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raffi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.13\\microsoft.aspnetcore.cryptography.internal.3.1.13.nupkg.sha512",
     "C:\\Users\\raffi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.13\\microsoft.aspnetcore.cryptography.keyderivation.3.1.13.nupkg.sha512",
